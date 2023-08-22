@@ -8,7 +8,7 @@ const slider = document.querySelector('.items');
         isDown = true;
         slider.classList.add('active')
         startX = event.pageX - slider.offsetLeft;
-        scrollLeft = slider.scrollLeft;
+        scrollLeft = 3;
     });
     
     slider.addEventListener('mouseleave', () => {
@@ -27,4 +27,7 @@ const slider = document.querySelector('.items');
         const x = event.pageX - slider.offsetLeft;
         const walk = (x - startX)*2;
         slider.scrollLeft = scrollLeft - walk;
+		
     });
+
+
