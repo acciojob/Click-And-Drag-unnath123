@@ -24,7 +24,7 @@ slider.addEventListener("mouseup", () => {
 
 slider.addEventListener("mousemove", (e) => {
   if (!isDown) return; //stop the function from running
-  console.log(isDown);
+  //console.log(isDown);
   e.preventDefault(); // prevent selection of text etc inside area.
   const x = e.pageX - slider.offsetLeft;
   const scrollMultiple = 3; // scroll 3 pixels for each pixel moved by the mouse.
